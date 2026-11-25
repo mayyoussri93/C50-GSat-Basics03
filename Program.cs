@@ -131,9 +131,22 @@ namespace C50_GSat_Basics03
             //} while (index < 3);
 
             //Q15.Using the same books array, use a foreach loop to print every book title.
-            foreach (string book in books)
+            //foreach (string book in books)
+            //{
+            //    Console.WriteLine(book);
+            //}
+
+            //Q16.Using the same books array, loop through it and print each title, but stop completely (break) once
+           // you reach "Refactoring".
+           
+            foreach(string book in books)
             {
+                if (book == "Refactoring")
+                {
+                    break;
+                }
                 Console.WriteLine(book);
+
             }
         }
     }
