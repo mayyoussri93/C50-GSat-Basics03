@@ -47,11 +47,14 @@ namespace C50_GSat_Basics03
 
 
             //Q6 . Build the same sentence as above, but using string interpolation ($"...").
-            string sentence = $"Book: {title}, Pages: {pages}";
+            //string sentence = $"Book: {title}, Pages: {pages}";
+            //Console.WriteLine(sentence);
+
+
+            //Q7. Build the same sentence as above, but using String.Format().
+
+            string sentence = String.Format("Book: {0}, Pages: {1}", title, pages);
             Console.WriteLine(sentence);
-
-
-
 
 
 
