@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Channels;
@@ -149,14 +150,27 @@ namespace C50_GSat_Basics03
             //}
 
             //Q17.Using the same books array, loop through it and print each title, but skip (continue) "The Pragmatic Programmer".
-            foreach (string book in books)
+            //foreach (string book in books)
+            //{
+            //    if (book == "The Pragmatic Programmer")
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(book);
+            //}
+
+            //Q18.Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+            // use return to exit the method early instead of printing anything.
+            void PrintFirstBook()
             {
-                if (book == "The Pragmatic Programmer")
+                if (books.Length == 0)
                 {
-                    continue;
+                    return;
                 }
-                Console.WriteLine(book);
+                Console.WriteLine(books[0]);
             }
+            PrintFirstBook();
+
         }
     }
 }
