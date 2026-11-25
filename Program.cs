@@ -24,19 +24,26 @@ namespace C50_GSat_Basics03
 
             //Q3.Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
             // object.Print the final result.
-            StringBuilder textStr = new StringBuilder();
-            textStr.Append("Book List");
+            //StringBuilder textStr = new StringBuilder();
+            //textStr.Append("Book List");
             //Console.WriteLine(textStr);
-            textStr.Append(" - Updated");
-            Console.WriteLine(textStr);
+            //textStr.Append(" - Updated");
+            //Console.WriteLine(textStr);
 
 
             //Q4.Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
             //Print the result.
-            textStr.Replace("Book List", "Library");
-            Console.WriteLine(textStr);
+            //textStr.Replace("Book List", "Library");
+            //Console.WriteLine(textStr);
 
 
+            //Q5.Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
+            //  Pages: 464" using the + operator.
+
+            string title = "Clean Code";
+            int pages = 464;
+            string sentence = "Book: " + title + ", Pages: " + pages;
+            Console.WriteLine(sentence);
 
 
 
