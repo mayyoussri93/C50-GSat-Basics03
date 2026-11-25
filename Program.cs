@@ -106,7 +106,7 @@ namespace C50_GSat_Basics03
             //Q12.Given string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };, use a for loop
             //to print each book with its position number, like 1.Clean Code.
 
-            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
             //for (int i = 0; i < books.Length; i++)
             //{
             //    Console.WriteLine($"{i + 1}. {books[i]}");
@@ -116,13 +116,19 @@ namespace C50_GSat_Basics03
 
             //Q13.Using the same books array, use a while loop to print every book title.
 
-            int index = 0;
-            while (index < books.Length)
-            {
-                Console.WriteLine($"{books[index]}");
-                index++;
-            }
+            //int index = 0;
+            //while (index < books.Length)
+            //{
+            //    Console.WriteLine($"{books[index]}");
+            //    index++;
+            //}
 
+            //Q14.Write a do-while loop that prints "Checking book..." exactly 3 times.
+            int index = 0;
+            do {
+                Console.WriteLine("Checking book...");
+                ++index;
+            } while (index < 3);
         }
     }
 }
