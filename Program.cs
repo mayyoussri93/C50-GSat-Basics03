@@ -26,9 +26,20 @@ namespace C50_GSat_Basics03
             // object.Print the final result.
             StringBuilder textStr = new StringBuilder();
             textStr.Append("Book List");
-            Console.WriteLine(textStr);
+            //Console.WriteLine(textStr);
             textStr.Append(" - Updated");
             Console.WriteLine(textStr);
+
+
+            //Q4.Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            textStr.Replace("Book List", "Library");
+            Console.WriteLine(textStr);
+
+
+
+
+
 
 
         }
