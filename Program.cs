@@ -107,11 +107,22 @@ namespace C50_GSat_Basics03
             //to print each book with its position number, like 1.Clean Code.
 
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            for (int i = 0; i < books.Length; i++)
-            {
-                Console.WriteLine($"{i + 1}. {books[i]}");
+            //for (int i = 0; i < books.Length; i++)
+            //{
+            //    Console.WriteLine($"{i + 1}. {books[i]}");
 
+            //}
+
+
+            //Q13.Using the same books array, use a while loop to print every book title.
+
+            int index = 0;
+            while (index < books.Length)
+            {
+                Console.WriteLine($"{index + 1}. {books[index]}");
+                index++;
             }
+
         }
     }
 }
