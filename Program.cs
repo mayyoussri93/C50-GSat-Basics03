@@ -119,7 +119,7 @@ namespace C50_GSat_Basics03
             int index = 0;
             while (index < books.Length)
             {
-                Console.WriteLine($"{index + 1}. {books[index]}");
+                Console.WriteLine($"{books[index]}");
                 index++;
             }
 
