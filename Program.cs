@@ -42,8 +42,14 @@ namespace C50_GSat_Basics03
 
             string title = "Clean Code";
             int pages = 464;
-            string sentence = "Book: " + title + ", Pages: " + pages;
+            //string sentence = "Book: " + title + ", Pages: " + pages;
+            //Console.WriteLine(sentence);
+
+
+            //Q6 . Build the same sentence as above, but using string interpolation ($"...").
+            string sentence = $"Book: {title}, Pages: {pages}";
             Console.WriteLine(sentence);
+
 
 
 
