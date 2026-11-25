@@ -40,8 +40,8 @@ namespace C50_GSat_Basics03
             //Q5.Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code,
             //  Pages: 464" using the + operator.
 
-            string title = "Clean Code";
-            int pages = 464;
+            //string title = "Clean Code";
+            //int pages = 464;
             //string sentence = "Book: " + title + ", Pages: " + pages;
             //Console.WriteLine(sentence);
 
@@ -53,8 +53,22 @@ namespace C50_GSat_Basics03
 
             //Q7. Build the same sentence as above, but using String.Format().
 
-            string sentence = String.Format("Book: {0}, Pages: {1}", title, pages);
-            Console.WriteLine(sentence);
+            //string sentence = String.Format("Book: {0}, Pages: {1}", title, pages);
+            //Console.WriteLine(sentence);
+
+            //Q8.Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            // 300, otherwise prints "Short Book".
+
+            int pages = 464;
+            if (pages > 300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+                Console.WriteLine("Short Book");
+            }
+
 
 
 
